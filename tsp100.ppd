@@ -1,0 +1,206 @@
+*PPD-Adobe:             "4.3"
+*FormatVersion:         "4.3"
+*FileVersion:           "2.1"
+*LanguageVersion:       English
+*LanguageEncoding:      ISOLatin1
+*PCFileName:            "tsp143.ppd"
+*Manufacturer:          "STAR"
+*Product:               "(TSP143)"
+*1284DeviceID:          "MFG:Star;CMD:STAR;MDL:TSP143 (STR_T-001);CLS:PRINTER;"
+*cupsVersion:           1.1
+*cupsManualCopies:      True
+*cupsModelNumber:       143
+*cupsFilter:            "application/vnd.cups-raster 0 rastertostar"
+*ModelName:             "TSP100 Cutter"
+*ShortNickName:         "TSP100 Cutter"
+*NickName:              "Star TSP100 Cutter"
+*PSVersion:             "(3010.000) 550"
+*LanguageLevel:         "3"
+*ColorDevice:           False
+*DefaultColorSpace:     Gray
+*FileSystem:            False
+*Throughput:            "1"
+*LandscapeOrientation:  Plus90
+*VariablePaperSize:     True
+*TTRasterizer:          Type42
+*cupsSNMPSupplies:      False
+*cupsIPPReason com.star-paper_out_error/Star Printer is out of paper: ""
+
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: X80MMY200MM/80mm * 200mm
+
+*PageSize X80MMY200MM/80mm * 200mm:            "<</PageSize[227 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: X80MMY200MM
+*PageRegion X80MMY200MM/80mm * 200mm:            "<</PageSize[227 566]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: X80MMY200MM
+
+*ImageableArea X80MMY200MM:         "0.0 0.0 227.0 566.0"
+
+*DefaultPaperDimension: X80MMY200MM
+
+*PaperDimension X80MMY200MM:        "227 566"
+
+*MaxMediaWidth:  "227"
+*MaxMediaHeight: "566"
+*HWMargins:      0 0 0 0
+*CustomPageSize True: "pop pop pop <</PageSize[5 -2 roll]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+*ParamCustomPageSize Width:        1 points 72 227
+*ParamCustomPageSize Height:       2 points 72 566
+*ParamCustomPageSize WidthOffset:  3 points 0 0
+*ParamCustomPageSize HeightOffset: 4 points 0 0
+*ParamCustomPageSize Orientation:  5 int 0 0
+
+*OpenGroup: OutputGroup/Output Options
+*OpenUI *PrintSpeed/1. Print Speed: PickOne
+*DefaultPrintSpeed: 0High
+*PrintSpeed 0High/High: ""
+*PrintSpeed 1Middle/Middle: ""
+*PrintSpeed 2Low/Low: ""
+*CloseUI: *PrintSpeed
+
+*OpenUI *PageType/2. Page Type: PickOne
+*DefaultPageType: 0Variable
+*PageType 0Variable/Variable Length: ""
+*PageType 1Fixed/Fixed Length: ""
+*CloseUI: *PageType
+
+*OpenUI *PrintDensity/3. Print Density: PickOne
+*DefaultPrintDensity: 3ZERO
+*PrintDensity 0Minus3/-3: ""
+*PrintDensity 1Minus2/-2: ""
+*PrintDensity 2Minus1/-1: ""
+*PrintDensity 3ZERO/Standard: ""
+*PrintDensity 4Plus1/+1: ""
+*PrintDensity 5Plus2/+2: ""
+*PrintDensity 6Plus3/+3: ""
+*CloseUI: *PrintDensity
+*CloseGroup: OutputGroup
+
+*OpenGroup: CutGroup/Cut Options
+*OpenUI *PageCutType/1. Page Cut Type: PickOne
+*DefaultPageCutType: 0NoCutPage
+*PageCutType 0NoCutPage/No Cut: ""
+*PageCutType 1PartialCutPage/Partial Cut: ""
+*CloseUI: *PageCutType
+
+*OpenUI *DocCutType/2. Document Cut Type: PickOne
+*DefaultDocCutType: 1PartialCutDoc
+*DocCutType 0NoCutDoc/No Cut: ""
+*DocCutType 1PartialCutDoc/Partial Cut: ""
+*CloseUI: *DocCutType
+*CloseGroup: CutGroup
+
+*OpenGroup: CashDrawerGroup/Cash Drawer Control
+*OpenUI *CashDrawerSetting/1. Cash Drawer: PickOne
+*DefaultCashDrawerSetting: 0DoNotOpenDrawers
+*CashDrawerSetting 0DoNotOpenDrawers/Do Not Open Drawers: ""
+*CashDrawerSetting 1OpenDrawer1/Open Drawer 1: ""
+*CashDrawerSetting 2OpenDrawer2/Open Drawer 2: ""
+*CashDrawerSetting 3OpenDrawer3/Open Drawers 1 and 2: ""
+*CloseUI: *CashDrawerSetting
+
+*OpenUI *CashDrawer1PulseWidth/2. Cash Drawer 1 Pulse Width: PickOne
+*DefaultCashDrawer1PulseWidth: 2Millis200
+*CashDrawer1PulseWidth 0Millis10/10 milliseconds: ""
+*CashDrawer1PulseWidth 1Millis100/100 milliseconds: ""
+*CashDrawer1PulseWidth 2Millis200/200 milliseconds: ""
+*CashDrawer1PulseWidth 3Millis300/300 milliseconds: ""
+*CashDrawer1PulseWidth 4Millis400/400 milliseconds: ""
+*CashDrawer1PulseWidth 5Millis500/500 milliseconds: ""
+*CashDrawer1PulseWidth 6Millis600/600 milliseconds: ""
+*CashDrawer1PulseWidth 7Millis700/700 milliseconds: ""
+*CashDrawer1PulseWidth 8Millis800/800 milliseconds: ""
+*CashDrawer1PulseWidth 9Millis900/900 milliseconds: ""
+*CashDrawer1PulseWidth 10Millis1000/1000 milliseconds: ""
+*CashDrawer1PulseWidth 11Millis1100/1100 milliseconds: ""
+*CashDrawer1PulseWidth 12Millis1200/1200 milliseconds: ""
+*CloseUI: *CashDrawer1PulseWidth
+*CloseGroup: CashDrawerGroup
+
+*OpenGroup: MelodySpeakerGroup/mC-Sound Control
+*OpenUI *MelodySpeakerSetting/1. mC-Sound: PickOne
+*DefaultMelodySpeakerSetting: 0NoUse
+*MelodySpeakerSetting 0NoUse/No Use: ""
+*MelodySpeakerSetting 1DocumentTop/Document Top: ""
+*MelodySpeakerSetting 2DocumentBtm/Document Bottom: ""
+*CloseUI: *MelodySpeakerSetting
+
+*OpenUI *MelodySpeakerSoundStorageArea/2. mC-Sound - Sound Storage Area: PickOne
+*DefaultMelodySpeakerSoundStorageArea: 0Area1
+*MelodySpeakerSoundStorageArea 0Area1/1: ""
+*MelodySpeakerSoundStorageArea 1Area2/2: ""
+*CloseUI: *MelodySpeakerSoundStorageArea
+
+*OpenUI *MelodySpeakerSoundNumber/3. mC-Sound - Sound Number: PickOne
+*DefaultMelodySpeakerSoundNumber: 0Number0
+*MelodySpeakerSoundNumber 0Number0/0: ""
+*MelodySpeakerSoundNumber 1Number1/1: ""
+*MelodySpeakerSoundNumber 2Number2/2: ""
+*MelodySpeakerSoundNumber 3Number3/3: ""
+*MelodySpeakerSoundNumber 4Number4/4: ""
+*MelodySpeakerSoundNumber 5Number5/5: ""
+*MelodySpeakerSoundNumber 6Number6/6: ""
+*MelodySpeakerSoundNumber 7Number7/7: ""
+*CloseUI: *MelodySpeakerSoundNumber
+
+*OpenUI *MelodySpeakerSoundVolume/4. mC-Sound - Sound Volume: PickOne
+*DefaultMelodySpeakerSoundVolume: 6Volume6
+*MelodySpeakerSoundVolume 0Volume0/0 (Mute): ""
+*MelodySpeakerSoundVolume 1Volume1/1: ""
+*MelodySpeakerSoundVolume 2Volume2/2 (Low): ""
+*MelodySpeakerSoundVolume 3Volume3/3: ""
+*MelodySpeakerSoundVolume 4Volume4/4: ""
+*MelodySpeakerSoundVolume 5Volume5/5: ""
+*MelodySpeakerSoundVolume 6Volume6/6 (Medium): ""
+*MelodySpeakerSoundVolume 7Volume7/7: ""
+*MelodySpeakerSoundVolume 8Volume8/8: ""
+*MelodySpeakerSoundVolume 9Volume9/9: ""
+*MelodySpeakerSoundVolume 10Volume10/10: ""
+*MelodySpeakerSoundVolume 11Volume11/11: ""
+*MelodySpeakerSoundVolume 12Volume12/12 (High): ""
+*MelodySpeakerSoundVolume 13Volume13/13: ""
+*MelodySpeakerSoundVolume 14Volume14/14: ""
+*MelodySpeakerSoundVolume 15Volume15/15: ""
+*CloseUI: *MelodySpeakerSoundVolume
+
+*OpenUI *MelodySpeakerRepeat/5. mC-Sound - Repeat: PickOne
+*DefaultMelodySpeakerRepeat: 0Repeat1
+*MelodySpeakerRepeat 0Repeat1/1: ""
+*MelodySpeakerRepeat 1Repeat2/2: ""
+*MelodySpeakerRepeat 2Repeat3/3: ""
+*MelodySpeakerRepeat 3Repeat4/4: ""
+*MelodySpeakerRepeat 4Repeat5/5: ""
+*MelodySpeakerRepeat 5Repeat6/6: ""
+*MelodySpeakerRepeat 6Repeat7/7: ""
+*MelodySpeakerRepeat 7Repeat8/8: ""
+*MelodySpeakerRepeat 8Repeat9/9: ""
+*MelodySpeakerRepeat 9Repeat10/10: ""
+*CloseUI: *MelodySpeakerRepeat
+*CloseGroup: MelodySpeakerGroup
+
+*OpenGroup: TakenSensorGroup/Taken Sensor Control
+*OpenUI *TakenSensorHoldPrint/1. Hold Print: PickOne
+*DefaultTakenSensorHoldPrint: 1Enable
+*TakenSensorHoldPrint 0Disable/Disable: ""
+*TakenSensorHoldPrint 1Enable/Enable: ""
+*CloseUI: *TakenSensorHoldPrint
+*CloseGroup: TakenSensorGroup
+
+*OpenGroup: DataTreatmentRecoverFromErrorGroup/Data Treatment Recover From Error
+*OpenUI *DataTreatmentRecoverFromError/1. DataTreatmentRecoverFromError: PickOne
+*DefaultDataTreatmentRecoverFromError: 0NoUse
+*DataTreatmentRecoverFromError 0NoUse/No Use: ""
+*DataTreatmentRecoverFromError 1ClearDataByDocumentUnit/Clear Data By Document Unit: ""
+*CloseUI: *DataTreatmentRecoverFromError
+*CloseGroup: DataTreatmentRecoverFromErrorGroup
+
+*% End
